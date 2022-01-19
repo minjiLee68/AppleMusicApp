@@ -41,6 +41,7 @@ class TrackManager {
     // 앨범 로딩메소드 구현
     func loadAlbums(track: [AVPlayerItem]) -> [Album] {
         let trackList: [Track] = tracks.compactMap { $0.convertToTrack() }
+        //앨범이름으로 뭉쳐모여!
         let albumDics = Dictionary(grouping: trackList, by: { (track) in track.albumName })
         var albums: [Album] = []
         for (key, value) in albumDics {
