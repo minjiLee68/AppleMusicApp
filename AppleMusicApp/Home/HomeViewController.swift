@@ -17,29 +17,40 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: UICollectionViewDataSource {
-    // 몇개 표시할까?
+    // 몇개 표시 할까?
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return trackManager.tracks.count
     }
     
-    // 셀을 어떻게 표시 할까?
+    // 셀 어떻게 표시 할까?
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        // 셀 구성하기
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TrackCollectionViewCell", for: indexPath) as? TrackCollectionViewCell else {
             return UICollectionViewCell()
         }
         
-        let track = trackManager.track(at: indexPath.item)
-        cell.updateUI(item: track)
+        let item = trackManager.track(at: indexPath.item)
+        cell.updateUI(item: item)
         return cell
     }
     
-    //헤더뷰 어떻게 표시할까?
+    // 헤더뷰 어떻게 표시할까?
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         switch kind {
         case UICollectionView.elementKindSectionHeader:
-            // 헤더 구성하기
-            return UICollectionReusableView()
+            guard let item = trackManager.todaysTrack else {
+                return UICollectionReusableView()
+            }
+            
+            guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "TrackCollectionHeaderView", for: indexPath) as? TrackCollectionHeaderView else {
+                return UICollectionReusableView()
+            }
+            
+            header.update(with: item)
+            header.tapHandler = { item -> Void in
+                print("---> item title: \(item.convertToTrack()?.title)")
+            }
+            return header
+            
         default:
             return UICollectionReusableView()
         }
@@ -56,12 +67,22 @@ extension HomeViewController: UICollectionViewDelegate {
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     // 셀 사이즈 어떻게 할까?
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        // (좌측마진)20 - card(width) - (가운데 간격)20 - card(width) - 20(우측 마진)
-        // 셀 사이즈 구하기
-        let itemSpacing: CGFloat = 20
-        let margin: CGFloat = 20
-        let width = (collectionView.bounds.width - itemSpacing - margin * 2) / 2
-        let height = width + 60
+        // 20 - card(width) - 20 - card(width) - 20
+        let width: CGFloat = (collectionView.bounds.width - (20 * 3))/2
+        let height: CGFloat = width + 60
         return CGSize(width: width, height: height)
     }
 }
+
+//extension HomeViewController: UICollectionViewDelegateFlowLayout {
+//    // 셀 사이즈 어떻게 할까?
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        // (좌측마진)20 - card(width) - (가운데 간격)20 - card(width) - 20(우측 마진)
+//        // 셀 사이즈 구하기
+//        let itemSpacing: CGFloat = 20
+//        let margin: CGFloat = 20
+//        let width = (collectionView.bounds.width - itemSpacing - margin * 2) / 2
+//        let height = width + 60
+//        return CGSize(width: width, height: height)
+//    }
+//}
