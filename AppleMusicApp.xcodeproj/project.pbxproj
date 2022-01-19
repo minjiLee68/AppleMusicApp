@@ -37,6 +37,9 @@
 		0AB737392797EF33003F5F3D /* Moonlight!.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0AB737232797EF33003F5F3D /* Moonlight!.mp3 */; };
 		0AB737402797F03E003F5F3D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB7373F2797F03E003F5F3D /* HomeViewController.swift */; };
 		0AB737432797F1FA003F5F3D /* DefaultStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB737422797F1FA003F5F3D /* DefaultStyle.swift */; };
+		0AB737452797F632003F5F3D /* TrackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB737442797F632003F5F3D /* TrackManager.swift */; };
+		0AB737482797F762003F5F3D /* SimplePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB737472797F762003F5F3D /* SimplePlayer.swift */; };
+		0AB7374A2797F8E6003F5F3D /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB737492797F8E6003F5F3D /* Track.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +75,9 @@
 		0AB737232797EF33003F5F3D /* Moonlight!.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Moonlight!.mp3"; path = "../../../../../Downloads/올인원패키지_강의자료_ch1-20/new_올인원패키지-ios앱개발-강의자료-ch11-15/CH12 애플뮤직st 음악앱/starter/AppleMusicStApp/AppleMusicStApp/Resources/Moonlight!.mp3"; sourceTree = "<group>"; };
 		0AB7373F2797F03E003F5F3D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0AB737422797F1FA003F5F3D /* DefaultStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStyle.swift; sourceTree = "<group>"; };
+		0AB737442797F632003F5F3D /* TrackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackManager.swift; sourceTree = "<group>"; };
+		0AB737472797F762003F5F3D /* SimplePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlayer.swift; sourceTree = "<group>"; };
+		0AB737492797F8E6003F5F3D /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +166,7 @@
 		0AB7373A2797EF64003F5F3D /* Palyer */ = {
 			isa = PBXGroup;
 			children = (
+				0AB737472797F762003F5F3D /* SimplePlayer.swift */,
 			);
 			path = Palyer;
 			sourceTree = "<group>";
@@ -167,6 +174,8 @@
 		0AB7373B2797EF70003F5F3D /* Track */ = {
 			isa = PBXGroup;
 			children = (
+				0AB737442797F632003F5F3D /* TrackManager.swift */,
+				0AB737492797F8E6003F5F3D /* Track.swift */,
 			);
 			path = Track;
 			sourceTree = "<group>";
@@ -273,6 +282,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AB737432797F1FA003F5F3D /* DefaultStyle.swift in Sources */,
+				0AB737482797F762003F5F3D /* SimplePlayer.swift in Sources */,
+				0AB737452797F632003F5F3D /* TrackManager.swift in Sources */,
+				0AB7374A2797F8E6003F5F3D /* Track.swift in Sources */,
 				0AB5405A2797E830006EF45B /* TrackCollectionViewCell.swift in Sources */,
 				0AB540432797E52C006EF45B /* AppDelegate.swift in Sources */,
 				0AB540452797E52C006EF45B /* SceneDelegate.swift in Sources */,
