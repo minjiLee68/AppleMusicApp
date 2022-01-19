@@ -18,7 +18,7 @@ class TrackCollectionViewCell: UICollectionViewCell {
         trackArtist.textColor = UIColor.systemGray2
     }
     
-//    func updateUI(item: Track?) {
-//
-//    }
+    func updateUI(item: Track?) {
+
+    }
 }

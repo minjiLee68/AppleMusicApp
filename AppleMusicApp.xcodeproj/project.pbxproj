@@ -40,6 +40,7 @@
 		0AB737452797F632003F5F3D /* TrackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB737442797F632003F5F3D /* TrackManager.swift */; };
 		0AB737482797F762003F5F3D /* SimplePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB737472797F762003F5F3D /* SimplePlayer.swift */; };
 		0AB7374A2797F8E6003F5F3D /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB737492797F8E6003F5F3D /* Track.swift */; };
+		0AB7374C279801A8003F5F3D /* AVPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB7374B279801A8003F5F3D /* AVPlayerItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		0AB737442797F632003F5F3D /* TrackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackManager.swift; sourceTree = "<group>"; };
 		0AB737472797F762003F5F3D /* SimplePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlayer.swift; sourceTree = "<group>"; };
 		0AB737492797F8E6003F5F3D /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		0AB7374B279801A8003F5F3D /* AVPlayerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 			children = (
 				0AB737442797F632003F5F3D /* TrackManager.swift */,
 				0AB737492797F8E6003F5F3D /* Track.swift */,
+				0AB7374B279801A8003F5F3D /* AVPlayerItem.swift */,
 			);
 			path = Track;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				0AB737482797F762003F5F3D /* SimplePlayer.swift in Sources */,
 				0AB737452797F632003F5F3D /* TrackManager.swift in Sources */,
 				0AB7374A2797F8E6003F5F3D /* Track.swift in Sources */,
+				0AB7374C279801A8003F5F3D /* AVPlayerItem.swift in Sources */,
 				0AB5405A2797E830006EF45B /* TrackCollectionViewCell.swift in Sources */,
 				0AB540432797E52C006EF45B /* AppDelegate.swift in Sources */,
 				0AB540452797E52C006EF45B /* SceneDelegate.swift in Sources */,
