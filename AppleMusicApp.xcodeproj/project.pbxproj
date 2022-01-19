@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A2D69AE2798621700B5EAE0 /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A2D69AD2798621700B5EAE0 /* Player.storyboard */; };
+		0A2D69B02798624300B5EAE0 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D69AF2798624300B5EAE0 /* PlayerViewController.swift */; };
 		0AB540432797E52C006EF45B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB540422797E52C006EF45B /* AppDelegate.swift */; };
 		0AB540452797E52C006EF45B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB540442797E52C006EF45B /* SceneDelegate.swift */; };
 		0AB5404A2797E52C006EF45B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AB540482797E52C006EF45B /* Main.storyboard */; };
@@ -45,6 +47,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A2D69AD2798621700B5EAE0 /* Player.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Player.storyboard; sourceTree = "<group>"; };
+		0A2D69AF2798624300B5EAE0 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		0AB5403F2797E52C006EF45B /* AppleMusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB540422797E52C006EF45B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AB540442797E52C006EF45B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				0AB737472797F762003F5F3D /* SimplePlayer.swift */,
+				0A2D69AD2798621700B5EAE0 /* Player.storyboard */,
+				0A2D69AF2798624300B5EAE0 /* PlayerViewController.swift */,
 			);
 			path = Palyer;
 			sourceTree = "<group>";
@@ -257,6 +263,7 @@
 				0AB737252797EF33003F5F3D /* tranquility.mp3 in Resources */,
 				0AB737352797EF33003F5F3D /* i fell in love with you one night in september..mp3 in Resources */,
 				0AB737332797EF33003F5F3D /* Sleepless.mp3 in Resources */,
+				0A2D69AE2798621700B5EAE0 /* Player.storyboard in Resources */,
 				0AB737242797EF33003F5F3D /* memories (listen on spotify from 3am ep).mp3 in Resources */,
 				0AB5404F2797E52C006EF45B /* LaunchScreen.storyboard in Resources */,
 				0AB7372B2797EF33003F5F3D /* Sampled in your own sweet way.mp3 in Resources */,
@@ -296,6 +303,7 @@
 				0AB540432797E52C006EF45B /* AppDelegate.swift in Sources */,
 				0AB540452797E52C006EF45B /* SceneDelegate.swift in Sources */,
 				0AB737402797F03E003F5F3D /* HomeViewController.swift in Sources */,
+				0A2D69B02798624300B5EAE0 /* PlayerViewController.swift in Sources */,
 				0AB7374E279821B9003F5F3D /* TrackCollectionHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
